@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Socialvest — Independent Deal Origination · Mexico</title>
+<meta name="description" content="Independent deal origination for Mexican mid-market real assets and industrials. Energy, infrastructure, financial services, industrials. $15M–$100M. Advisory only. Selective LATAM coverage." />
+<meta name="robots" content="index, follow" />
+<meta property="og:title" content="Socialvest — Independent Deal Origination · Mexico" />
+<meta property="og:description" content="Independent deal origination for Mexican mid-market real assets and industrials. Advisory only." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.socialvest.co" />
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-alt: #111111;
+    --fg: #ffffff;
+    --fg-muted: rgba(255, 255, 255, 0.62);
+    --fg-faint: rgba(255, 255, 255, 0.38);
+    --accent: #ffc300;
+    --rule: rgba(255, 255, 255, 0.10);
+    --max: 1080px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* Top bar */
+  header.top {
+    padding: 32px 0 16px;
+  }
+  header.top .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wordmark {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: var(--accent);
+  }
+  .top-meta {
+    font-size: 13px;
+    color: var(--fg-muted);
+    letter-spacing: 0.02em;
+  }
+
+  /* Hero */
+  section.hero {
+    padding: 80px 0 120px;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 6.4vw, 84px);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    margin: 0 0 32px;
+    color: var(--fg);
+    max-width: 18ch;
+  }
+  .hero h1 .accent {
+    color: var(--accent);
+  }
+  .hero .sub {
+    font-size: clamp(17px, 1.7vw, 20px);
+    color: var(--fg-muted);
+    max-width: 56ch;
+    margin: 0 0 40px;
+    line-height: 1.55;
+  }
+  .hero .meta-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 28px;
+    font-size: 14px;
+    color: var(--fg-faint);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+  }
+  .hero .meta-line span::before {
+    content: "·";
+    margin-right: 28px;
+    color: var(--rule);
+  }
+  .hero .meta-line span:first-child::before {
+    content: "";
+    margin-right: 0;
+  }
+  .cta-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .cta {
+    display: inline-block;
+    padding: 14px 22px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    transition: background 150ms ease, color 150ms ease;
+  }
+  .cta:hover {
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+  }
+  .cta.secondary {
+    border-color: var(--rule);
+    color: var(--fg-muted);
+  }
+  .cta.secondary:hover {
+    background: transparent;
+    border-color: var(--fg-muted);
+    color: var(--fg);
+  }
+
+  /* Sections */
+  section {
+    padding: 80px 0;
+    border-top: 1px solid var(--rule);
+  }
+  section .label {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 28px;
+    font-weight: 600;
+  }
+  section h2 {
+    font-size: clamp(28px, 3.6vw, 40px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 0 0 32px;
+    max-width: 22ch;
+  }
+  section p {
+    color: var(--fg-muted);
+    max-width: 64ch;
+    margin: 0 0 18px;
+  }
+  section p strong {
+    color: var(--fg);
+    font-weight: 600;
+  }
+
+  /* Two-column rows */
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (max-width: 720px) {
+    .row { grid-template-columns: 1fr; gap: 16px; }
+  }
+  .row .heading {
+    font-size: 14px;
+    color: var(--fg-faint);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 6px;
+  }
+  .row .body p:last-child { margin-bottom: 0; }
+
+  /* Track record */
+  .deals {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 8px;
+  }
+  .deal {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.6fr;
+    gap: 32px;
+    padding: 24px 0;
+    border-top: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .deal:last-child { border-bottom: 1px solid var(--rule); }
+  .deal .sector {
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .deal .desc {
+    color: var(--fg);
+    font-weight: 500;
+  }
+  .deal .meta {
+    color: var(--fg-faint);
+    font-size: 14px;
+    text-align: right;
+  }
+  @media (max-width: 720px) {
+    .deal {
+      grid-template-columns: 1fr;
+      gap: 6px;
+      padding: 20px 0;
+    }
+    .deal .meta { text-align: left; }
+  }
+
+  /* Engagement */
+  .engagements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  @media (max-width: 720px) {
+    .engagements { grid-template-columns: 1fr; }
+  }
+  .engagement {
+    border: 1px solid var(--rule);
+    padding: 28px;
+  }
+  .engagement h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 12px;
+    letter-spacing: 0.01em;
+  }
+  .engagement p {
+    color: var(--fg-muted);
+    margin: 0;
+    font-size: 15.5px;
+  }
+
+  /* About */
+  .about p { max-width: 60ch; }
+
+  /* Contact */
+  .contact-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 16px;
+  }
+  @media (max-width: 720px) {
+    .contact-block { grid-template-columns: 1fr; }
+  }
+  .contact-item .k {
+    font-size: 12px;
+    color: var(--fg-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .contact-item .v {
+    font-size: 18px;
+    color: var(--fg);
+  }
+  .contact-item .v a { color: var(--accent); }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 40px 0 56px;
+    color: var(--fg-faint);
+    font-size: 13px;
+  }
+  footer .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  footer .legal {
+    max-width: 60ch;
+    line-height: 1.6;
+  }
+  footer .addr {
+    text-align: right;
+    line-height: 1.6;
+  }
+  @media (max-width: 720px) {
+    footer .addr { text-align: left; }
+  }
+
+  /* Selection */
+  ::selection {
+    background: var(--accent);
+    color: var(--bg);
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="wordmark">Socialvest</div>
+    <div class="top-meta">Monterrey · México</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Independent <span class="accent">deal origination</span> for Mexican real assets and industrials.</h1>
+    <p class="sub">Socialvest sources and qualifies mid-market transactions in Mexico for funds and strategic acquirers without local origination capacity. Selective LATAM coverage. Advisory only — no placement, no structuring.</p>
+    <div class="meta-line">
+      <span>Energy</span>
+      <span>Infrastructure</span>
+      <span>Financial services</span>
+      <span>Industrials</span>
+    </div>
+    <div class="meta-line">
+      <span>$15M–$100M</span>
+      <span>Mexico-led</span>
+      <span>Selective LATAM</span>
+    </div>
+    <div class="cta-row">
+      <a class="cta" href="mailto:jorge@socialvest.co">jorge@socialvest.co</a>
+      <a class="cta secondary" href="#engagement">How I work</a>
+    </div>
+  </div>
+</section>
+
+<section id="what">
+  <div class="wrap">
+    <div class="row">
+      <div class="heading">What Socialvest does</div>
+      <div class="body">
+        <p>Socialvest is a one-person origination practice focused on the segment most institutional banks fail to cover well: <strong>Mexican mid-market real assets and industrials.</strong> Selective coverage across Latin America when transactions warrant it.</p>
+        <p>The work is finding, qualifying, and bringing to mandate transactions that fit a client's investment criteria. Filtering matters more than volume. Most pipelines that reach a fund's desk are noise; the value of an originator is reducing that noise to a small number of opportunities worth attention.</p>
+        <p>Socialvest does not place securities, does not execute structuring or modeling, and does not represent issuers in the capital-raising process. The service is origination judgment and access — nothing more, nothing less.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="track-record">
+  <div class="wrap">
+    <div class="row">
+      <div class="heading">Recent engagements</div>
+      <div class="body">
+        <p>Transactions sourced and brought to mandate. Counterparties not disclosed.</p>
+        <div class="deals">
+          <div class="deal">
+            <div class="sector">Energy</div>
+            <div class="desc">Producing oil field sourced and brought to mandate</div>
+            <div class="meta">Mexico · ~$100M</div>
+          </div>
+          <div class="deal">
+            <div class="sector">Energy</div>
+            <div class="desc">Energy distribution company sourced and brought to mandate</div>
+            <div class="meta">Mexico · ~$20M</div>
+          </div>
+          <div class="deal">
+            <div class="sector">Financial services</div>
+            <div class="desc">Non-performing mortgage loan restructuring company sourced and brought to mandate</div>
+            <div class="meta">Mexico · ~$20M</div>
+          </div>
+          <div class="deal">
+            <div class="sector">Industrials</div>
+            <div class="desc">Appliance manufacturer sourced and brought to mandate</div>
+            <div class="meta">Mexico · ~$15M</div>
+          </div>
+        </div>
+        <p style="margin-top: 28px; font-size: 14px; color: var(--fg-faint);">Additional regional experience includes work on transactions in El Salvador, Guatemala, Ecuador, and Peru.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="engagement">
+  <div class="wrap">
+    <div class="row">
+      <div class="heading">How Socialvest works</div>
+      <div class="body">
+        <p>Two engagement models. Capacity is limited to a small number of active clients to protect quality of judgment.</p>
+        <div class="engagements">
+          <div class="engagement">
+            <h3>Retainer</h3>
+            <p>For funds and strategic acquirers that want continuous LATAM mid-market deal flow in agreed sectors and geographies. Monthly retainer with success fee on close. Twelve-month minimum term.</p>
+          </div>
+          <div class="engagement">
+            <h3>Mandate</h3>
+            <p>Targeted searches. A specific asset class, geography, or counterparty profile. Defined scope, defined timeline. Engagement fee with success fee on close.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="row">
+      <div class="heading">About</div>
+      <div class="body about">
+        <p>Socialvest is led by <strong>Jorge Téllez</strong> from Monterrey, Mexico. The practice was built after a period of working with mid-market US investment banks on Latin American transactions. The recurring pattern was banks that could analyze deals but lacked the local presence to source or distribute them well in the region.</p>
+        <p>Socialvest was set up to do one of those jobs honestly: origination. Funds and strategics with Mexico and LATAM mandates need a senior, independent person on the ground who returns calls, filters real opportunities from noise, and does not sell things outside their lane.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="row">
+      <div class="heading">Contact</div>
+      <div class="body">
+        <p>For inbound from funds, strategics, family offices, and partner banks looking for Mexican and selective LATAM origination coverage.</p>
+        <div class="contact-block">
+          <div class="contact-item">
+            <div class="k">Email</div>
+            <div class="v"><a href="mailto:jorge@socialvest.co">jorge@socialvest.co</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="k">LinkedIn</div>
+            <div class="v"><a href="https://www.linkedin.com/in/novohispano" target="_blank" rel="noopener">linkedin.com/in/novohispano</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="legal">
+      Socialvest is the property of CeroUno Ventures SAPI de CV. Socialvest provides advisory services in partnership with LW Partners. All rights reserved.
+    </div>
+    <div class="addr">
+      Hidalgo 330, Piso 5<br />
+      Colonia Centro<br />
+      Monterrey, NL 64000<br />
+      México
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
