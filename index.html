@@ -4,6 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Socialvest — Independent Deal Origination · Mexico</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon-256.png">
 <meta name="description" content="Independent deal origination for Mexican mid-market real assets and industrials. Energy, infrastructure, financial services, industrials. $15M–$100M. Advisory only. Selective LATAM coverage." />
 <meta name="robots" content="index, follow" />
 <meta property="og:title" content="Socialvest — Independent Deal Origination · Mexico" />
@@ -55,10 +57,10 @@
     justify-content: space-between;
   }
   .wordmark {
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: -0.01em;
-    color: var(--accent);
+    display: inline-block;
+    height: 13.5px;
+    width: auto;
+    vertical-align: middle;
   }
   .top-meta {
     font-size: 13px;
@@ -178,6 +180,10 @@
   }
   @media (max-width: 720px) {
     .row { grid-template-columns: 1fr; gap: 16px; }
+    .hero .meta-line { gap: 8px 0; flex-direction: column; align-items: flex-start; }
+    .hero .meta-line span::before { content: ""; margin-right: 0; }
+    .cta-row { flex-direction: column; align-items: stretch; }
+    .cta { text-align: center; }
   }
   .row .heading {
     font-size: 14px;
@@ -320,7 +326,7 @@
 
 <header class="top">
   <div class="wrap">
-    <div class="wordmark">Socialvest</div>
+    <img class="wordmark" src="/wordmark.svg" alt="Socialvest">
     <div class="top-meta">Monterrey · México</div>
   </div>
 </header>
